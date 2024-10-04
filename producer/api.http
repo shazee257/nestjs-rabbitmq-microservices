@@ -1,0 +1,12 @@
+GET http://localhost:3000/order/place-order
+
+###
+
+POST http://localhost:3000/order/place-order
+Content-Type: application/json
+
+{
+    "email": "abc@gmail.com",
+    "productName": "Laptop",
+    "quantity": 1
+}
