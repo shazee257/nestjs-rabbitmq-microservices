@@ -11,9 +11,9 @@ export class OrderController {
     return this.orderService.placeOrder(order);
   }
 
-  @Get('place-order')
-  getHello(): string {
-    return 'Hello World!';
+  @Get()
+  getOrders() {
+    return this.orderService.getOrders();
   }
 }
 

@@ -12,4 +12,8 @@ export class OrderService {
 
         return { message: 'Order placed successfully' };
     }
+
+    getOrders() {
+        return this.rabbitClient.send({ cmd: 'fetch-orders' }, {});
+    }
 }

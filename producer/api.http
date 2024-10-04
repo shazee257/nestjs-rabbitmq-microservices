@@ -10,3 +10,7 @@ Content-Type: application/json
     "productName": "Laptop",
     "quantity": 1
 }
+
+###
+
+GET http://localhost:3000/order
